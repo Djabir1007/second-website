@@ -1,0 +1,13 @@
+.hero {
+  background-color: #101010;
+  border-radius: 30px;
+  margin-bottom: 44px;
+  &__flex {
+    display: flex;
+  }
+  &__desc {
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+  }
+}

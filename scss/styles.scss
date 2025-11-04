@@ -1,0 +1,12 @@
+// Шрифт
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+// Базовые настройки
+@import "base/variables";
+@import "base/reset";
+@import "base/global";
+
+// Блоки
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/covers.scss";

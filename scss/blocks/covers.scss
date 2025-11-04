@@ -1,0 +1,26 @@
+.covers {
+  margin-bottom: 30px;
+  &__title {
+    color: $color-title;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &__flex {
+    display: flex;
+    gap: 30px;
+  }
+  &__card {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 25px 99px 91px 100px;
+  }
+  &__card-img {
+    margin-bottom: 20px;
+  }
+  &__card-desc {
+    font-weight: 600;
+    font-size: 17px;
+    color: $color-text;
+  }
+}

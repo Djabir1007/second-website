@@ -1,0 +1,11 @@
+body {
+  font-family: $font-main;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 50px;
+}

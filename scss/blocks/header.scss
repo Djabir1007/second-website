@@ -1,0 +1,26 @@
+.header {
+  margin-bottom: 22px;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+  &__logo-img {
+    width: 85px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__list-desc {
+    font-size: 15px;
+    font-weight: 500;
+    color: #101010;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
