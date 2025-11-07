@@ -1,0 +1,59 @@
+.footer {
+  background-color: #fff;
+  border-radius: 30px 30px 0 0;
+  padding: 30px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    gap: 175px;
+  }
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__link {
+    font-size: 17px;
+    color: #000;
+  }
+  &__link:hover {
+    @include text-hover;
+  }
+  &__terms-text {
+    display: block;
+    margin-bottom: 34px;
+    font-size: 17px;
+    color: #000;
+  }
+  &__terms-text:hover {
+    @include text-hover;
+  }
+  &__language {
+    display: flex;
+    gap: 17px;
+  }
+  &__language-item {
+    font-size: 15px;
+    color: #101010;
+  }
+  &__language-item:hover {
+    @include text-hover;
+    cursor: pointer;
+  }
+  &__language-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  &__social {
+    display: flex;
+    gap: 17px;
+  }
+  &__social-icon {
+    height: 31px;
+  }
+}

@@ -1,0 +1,51 @@
+@mixin block-title {
+  color: #838383;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@mixin card-price {
+  font-weight: 600;
+  font-size: 17px;
+  color: #ffa542;
+}
+
+@mixin card-hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@mixin card-title {
+  font-weight: 600;
+  font-size: 17px;
+  color: #1c1c27;
+  margin-bottom: 25px;
+}
+
+@mixin card-rating {
+  font-weight: 600;
+  font-size: 17px;
+  color: #838383;
+}
+
+@mixin card-rating-star {
+  color: #ffce7f;
+}
+
+@mixin value-sale {
+  font-size: 19px;
+  color: #df6464;
+}
+
+@mixin card-heart {
+  position: absolute;
+  top: 15px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@mixin text-hover {
+  color: #ffa542;
+}

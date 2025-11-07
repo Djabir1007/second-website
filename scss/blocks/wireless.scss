@@ -1,0 +1,52 @@
+.wireless {
+  margin-bottom: 60px;
+  &__title {
+    @include block-title;
+  }
+  &__grid {
+    display: grid; /* grid проще для равных колонок */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &__card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+  }
+  &__card:hover {
+    @include card-hover;
+  }
+  &__card-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+  }
+  &__card-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card-title {
+    @include card-title;
+  }
+  &__card-price {
+    @include card-price;
+  }
+  &__card-rating-star {
+    @include card-rating-star;
+  }
+  &__card-rating-value {
+    @include card-rating;
+  }
+  &__card-heart {
+    @include card-heart;
+  }
+  &__card-apple {
+    position: absolute;
+    top: 23px;
+    right: 21px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}

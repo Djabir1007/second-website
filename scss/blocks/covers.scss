@@ -1,10 +1,7 @@
 .covers {
   margin-bottom: 30px;
   &__title {
-    color: $color-title;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 20px;
+    @include block-title;
   }
   &__flex {
     display: flex;
@@ -13,14 +10,18 @@
   &__card {
     background-color: #fff;
     border-radius: 30px;
-    padding: 25px 99px 91px 100px;
+  }
+  &__card:hover {
+    @include card-hover;
   }
   &__card-img {
-    margin-bottom: 20px;
+    padding: 25px 100px;
   }
   &__card-desc {
     font-weight: 600;
     font-size: 17px;
     color: $color-text;
+    text-align: center;
+    padding-bottom: 50px;
   }
 }

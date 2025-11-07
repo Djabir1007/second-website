@@ -6,6 +6,10 @@
     align-items: center;
     padding-top: 10px;
   }
+  &__content {
+    display: flex;
+    gap: 65px;
+  }
   &__logo-img {
     width: 85px;
   }
@@ -17,10 +21,14 @@
     font-size: 15px;
     font-weight: 500;
     color: #101010;
+    margin-left: 15px;
   }
   &__btn {
     display: flex;
     align-items: center;
     gap: 25px;
+  }
+  &__list-item-btn {
+    margin-left: 5px;
   }
 }
