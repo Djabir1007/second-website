@@ -1,5 +1,8 @@
 .header {
   margin-bottom: 22px;
+  &--favorites {
+    margin-bottom: 29px;
+  }
   &__flex {
     display: flex;
     justify-content: space-between;
