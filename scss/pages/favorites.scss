@@ -1,0 +1,22 @@
+.favorites-page {
+  @include full-height;
+}
+
+.favorites-container {
+  @include container-flex;
+}
+
+.favorites-page main {
+  @include main-flex;
+}
+.header--favorites {
+  margin-bottom: 39px;
+}
+
+.headphones--favorites {
+  margin-bottom: 47px;
+}
+
+.wireless--favorites {
+  margin-bottom: 41px;
+}

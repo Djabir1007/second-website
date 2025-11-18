@@ -1,0 +1,117 @@
+.header--product {
+  margin-bottom: 30px;
+}
+
+.product-description {
+  &__title {
+    @include block-title;
+  }
+  &__card {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 19px 25px 27px 35px;
+    margin-bottom: 23px;
+  }
+  &__elements {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 25px;
+    color: #1c1c27;
+  }
+  &__prices {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__price-now {
+    font-weight: 600;
+    font-size: 28px;
+    color: #df6464;
+  }
+  &__price-old {
+    font-weight: 600;
+    font-size: 20px;
+    color: #aaa;
+    text-decoration-line: line-through;
+    text-decoration-color: #df6464;
+  }
+  &__sale-percentage {
+    font-weight: 600;
+    font-size: 20px;
+    color: #df6464;
+  }
+}
+
+.product-description-details {
+  margin-bottom: 19px;
+  &__flex {
+    display: flex;
+    gap: 31px;
+  }
+  &__content {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    max-width: 824px;
+    width: 100%;
+  }
+  &__title-block {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 22px;
+    border-radius: 15px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &__list-block {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 22px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__list-item {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &__btn {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 14px 87px;
+    border-radius: 10px;
+    background-color: #101010;
+    border: none;
+    font-family: inherit;
+  }
+}

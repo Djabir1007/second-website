@@ -78,7 +78,7 @@
         <section class="headphones">
           <h2 class="headphones__title">Наушники</h2>
           <div class="headphones__grid">
-            <article class="headphones__card">
+            <article class="headphones__card" data-product-id="1">
               <div class="headphones__content">
                 <div class="headphones__card-image">
                   <img
@@ -119,7 +119,7 @@
                 </svg>
               </button>
             </article>
-            <article class="headphones__card">
+            <article class="headphones__card" data-product-id="2">
               <div class="headphones__content">
                 <div class="headphones__card-image">
                   <img
@@ -156,7 +156,7 @@
                 </svg>
               </button>
             </article>
-            <article class="headphones__card">
+            <article class="headphones__card" data-product-id="3">
               <div class="headphones__content">
                 <div class="headphones__card-image">
                   <img
@@ -193,7 +193,7 @@
                 </svg>
               </button>
             </article>
-            <article class="headphones__card">
+            <article class="headphones__card" data-product-id="4">
               <div class="headphones__content">
                 <div class="headphones__card-image">
                   <img
@@ -240,7 +240,7 @@
                 </svg>
               </button>
             </article>
-            <article class="headphones__card">
+            <article class="headphones__card" data-product-id="5">
               <div class="headphones__content">
                 <div class="headphones__card-image">
                   <img
@@ -277,7 +277,7 @@
                 </svg>
               </button>
             </article>
-            <article class="headphones__card">
+            <article class="headphones__card" data-product-id="6">
               <div class="headphones__content">
                 <div class="headphones__card-image">
                   <img
@@ -319,7 +319,7 @@
         <section class="wireless">
           <h2 class="wireless__title">Беспроводные наушники</h2>
           <div class="wireless__grid">
-            <article class="wireless__card">
+            <article class="wireless__card" data-product-id="7">
               <div class="wireless__content">
                 <div class="wireless__card-image">
                   <img
@@ -371,7 +371,7 @@
                 </svg>
               </button>
             </article>
-            <article class="wireless__card">
+            <article class="wireless__card" data-product-id="8">
               <div class="wireless__content">
                 <div class="wireless__card-image">
                   <img
@@ -408,7 +408,7 @@
                 </svg>
               </button>
             </article>
-            <article class="wireless__card">
+            <article class="wireless__card" data-product-id="9">
               <div class="wireless__content">
                 <div class="wireless__card-image">
                   <img
@@ -457,10 +457,8 @@
           </div>
           <div class="footer__info">
             <div class="footer__info-list">
-              <a class="footer__link" href="favorites.html" target="_blank"
-                >Избранное</a
-              >
-              <a class="footer__link" href="">Корзина</a>
+              <a class="footer__link" href="favorites.html">Избранное</a>
+              <a class="footer__link" href="cart.html">Корзина</a>
               <a class="footer__link" href="">Контакты</a>
             </div>
             <div class="footer__info-terms">
@@ -512,9 +510,9 @@
                     />
                   </svg>
                 </button>
-                <p class="footer__language-item">Каз</p>
-                <p class="footer__language-item">Рус</p>
-                <p class="footer__language-item">Eng</p>
+                <p class="footer__language-item" data-lang="kaz">Каз</p>
+                <p class="footer__language-item" data-lang="rus">Рус</p>
+                <p class="footer__language-item" data-lang="eng">Eng</p>
               </div>
             </div>
           </div>
@@ -595,5 +593,6 @@
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

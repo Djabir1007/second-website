@@ -1,0 +1,17 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css" // Путь к папке css в корне проекта
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/node_modules/**", // Исключаем папку node_modules
+    "/.vscode/**", // Исключаем .vscode
+    "/scss/base/**", // Исключаем базовые стили
+    "/scss/blocks/**", // Исключаем блоки
+    "/scss/pages/**" // Исключаем страницы
+  ],
+  "liveSassCompile.settings.generateMap": false
+}

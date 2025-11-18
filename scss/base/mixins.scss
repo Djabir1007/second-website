@@ -16,6 +16,11 @@
   cursor: pointer;
 }
 
+@mixin btn-hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 @mixin card-title {
   font-weight: 600;
   font-size: 17px;
@@ -48,4 +53,16 @@
 
 @mixin text-hover {
   color: #ffa542;
+}
+
+@mixin full-height {
+  height: 100%;
+}
+@mixin container-flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+@mixin main-flex {
+  flex: 1 1 auto;
 }

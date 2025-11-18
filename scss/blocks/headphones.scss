@@ -3,9 +3,7 @@
   &__title {
     @include block-title;
   }
-  &--favorites {
-    margin-bottom: 47px;
-  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

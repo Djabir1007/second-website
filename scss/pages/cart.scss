@@ -1,0 +1,53 @@
+.header--cart {
+  margin-bottom: 61px;
+}
+
+.cart-page {
+  @include full-height;
+}
+
+.cart-container {
+  @include container-flex;
+}
+
+.cart-page main {
+  @include main-flex;
+}
+
+.cart {
+  margin-bottom: 127px;
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+    margin-bottom: 30px;
+  }
+  &__content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__content-title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #101010;
+  }
+  &__content-desc {
+    font-size: 20px;
+    color: #838383;
+  }
+  &__btn {
+    max-width: 540px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    background-color: #101010;
+    border-radius: 20px;
+  }
+  &__btn:hover {
+    @include btn-hover;
+  }
+}

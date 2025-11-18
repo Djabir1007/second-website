@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Избранное</title>
+    <title>Корзина</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="favorites-page">
-    <div class="container favorites-container">
-      <header class="header header--favorites">
+  <body class="cart-page">
+    <div class="container cart-container">
+      <header class="header header--cart">
         <div class="header__flex">
           <div class="header__content">
             <a href="" class="header__logo">
@@ -39,13 +39,19 @@
         </div>
       </header>
       <main>
-        <section class="headphones headphones--favorites">
-          <h2 class="headphones__title">Наушники</h2>
-          <div class="headphones__grid headphones__grid--favorites"></div>
-        </section>
-        <section class="wireless wireless--favorites">
-          <h2 class="wireless__title">Беспроводные наушники</h2>
-          <div class="wireless__grid wireless__grid--favorites"></div>
+        <section class="cart">
+          <div class="cart__flex">
+            <div class="cart__icon">
+              <img src="img/cart.png" alt="Корзина пустая" />
+            </div>
+            <div class="cart__content">
+              <h2 class="cart__content-title">Корзина пуста</h2>
+              <p class="cart__content-desc">
+                Но это никогда не поздно исправить :)
+              </p>
+            </div>
+            <button class="cart__btn">В каталог товаров</button>
+          </div>
         </section>
       </main>
       <footer class="footer">
