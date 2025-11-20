@@ -3,7 +3,6 @@
   &__flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-top: 10px;
   }
   &__content {
@@ -15,8 +14,47 @@
   }
   &__list {
     display: flex;
-    align-items: center;
+    gap: 15px;
   }
+  &__list-wrapper {
+    position: relative;
+  }
+  &__list-wrapper-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__list-wrapper-item-btn {
+    border: none;
+    cursor: pointer;
+  }
+
+  &__phone-list {
+    max-width: 255px;
+    width: 100%;
+    background-color: #eaeaea;
+    border: #000000 solid;
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    padding: 19px 48px 29px 27px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  &__phone-list.active {
+    opacity: 1;
+  }
+
+  &__phone-list-brand-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  &__phone-list-brand-title {
+    font-weight: 500;
+    font-size: 17px;
+  }
+
   &__list-desc {
     font-size: 15px;
     font-weight: 500;
@@ -25,10 +63,26 @@
   }
   &__btn {
     display: flex;
-    align-items: center;
+
     gap: 25px;
   }
   &__list-item-btn {
     margin-left: 5px;
   }
+  &__list-item-btn.active img {
+    transform: rotate(180deg);
+  }
+  &__phone-list-models {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__phone-list-models li a:hover {
+    color: #ffa542;
+    cursor: pointer;
+  }
+}
+.rotate {
+  transform: rotate(-180deg);
+  transition: 0.6s;
 }
