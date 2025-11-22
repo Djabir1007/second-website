@@ -14,47 +14,46 @@ productCards.forEach((card) => {
   });
 });
 
-// Кнопка "Выбрать модель телефона"
-const buttonCard = document.querySelectorAll(".header__list-wrapper-item-btn");
+// Header
+const mainBtn = document.querySelector(".header__list");
 
-buttonCard.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    const img = this.querySelector("img");
-    img.classList.toggle("rotate");
+function toggleMainPhoneList() {
+  const wrapper = document.querySelector(".header__list-wrapper");
+  const phoneList = wrapper.querySelector(".header__phone-list");
+  const myBtn = document.querySelector(".header__list-wrapper-item-btn");
 
-    if (this.closest(".header__list-wrapper-header")) {
-      const wrapper = this.closest(".header__list-wrapper");
-      const phoneList = wrapper.querySelector(".header__phone-list");
-      phoneList.classList.toggle("active");
-      return;
-    }
-    if (this.closest(".header__phone-list-brand-header")) {
-      const brandItem = this.closest(".header__phone-list-brand");
-      const phoneModelsList = brandItem.querySelector(
-        ".header__phone-list-models"
-      );
+  phoneList.classList.toggle("active");
+  myBtn.classList.toggle("rotate");
+}
 
-      const brandName = brandItem
-        .querySelector(".header__phone-list-brand-title")
-        .textContent.trim();
+mainBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  toggleMainPhoneList();
+});
 
-      const brandModels = models[brandName];
+const brandBtns = document.querySelectorAll(".brand-toggle-btn");
 
-      const html = brandModels
-        .map(
-          (m) => `<li>
-      <a>${m}</a></li>`
-        )
-        .join("");
+brandBtns.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const brandItem = btn.closest(".header__phone-list-brand");
 
-      if (phoneModelsList.classList.contains("active")) {
-        phoneModelsList.innerHTML = "";
-        phoneModelsList.classList.remove("active");
-      } else {
-        phoneModelsList.innerHTML = html;
-        phoneModelsList.classList.add("active");
-      }
-      return;
-    }
+    const modelsList = brandItem.querySelector(".header__phone-list-models");
+    const brandName = brandItem
+      .querySelector(".header__phone-list-brand-title")
+      .textContent.trim();
+
+    const brandModels = models[brandName];
+
+    const html = brandModels.map((el) => `<li><a>${el}</a></li>`).join("");
+    modelsList.innerHTML = html;
+    modelsList.classList.toggle("active");
   });
+});
+
+//cart.html
+const cartBtn = document.querySelector(".cart__btn");
+
+cartBtn.addEventListener("click", function () {
+  window.location.href = "index.html";
 });

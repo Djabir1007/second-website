@@ -237,6 +237,9 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.headphones__card-heart-icon:hover {
+  stroke: black;
+}
 .headphones__card-info {
   width: 100%;
   display: flex;
@@ -621,11 +624,16 @@ body {
 .product-description-details__btn {
   font-weight: 500;
   font-size: 15px;
-  text-align: center;
   color: #fff;
-  padding: 14px 87px;
   border-radius: 10px;
   background-color: #101010;
   border: none;
   font-family: inherit;
+  padding: 8px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  height: 45px;
 }
