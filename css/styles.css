@@ -288,6 +288,15 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
+.headphones__card-heart svg {
+  stroke: #1c1c27;
+  fill: transparent;
+  transition: 0.5s;
+}
+.headphones__card-heart svg:hover {
+  stroke: none;
+  fill: #1c1c27;
+}
 .headphones__card-price_sale {
   font-size: 19px;
   color: #df6464;
@@ -361,6 +370,15 @@ body {
   border: none;
   background-color: #fff;
   cursor: pointer;
+}
+.wireless__card-heart svg {
+  stroke: #1c1c27;
+  fill: transparent;
+  transition: 0.5s;
+}
+.wireless__card-heart svg:hover {
+  stroke: none;
+  fill: #1c1c27;
 }
 .wireless__card-apple {
   position: absolute;
@@ -576,6 +594,20 @@ body {
   font-size: 20px;
   color: #df6464;
 }
+.product-description__card-heart {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.product-description__card-heart svg {
+  stroke: #1c1c27;
+  fill: transparent;
+  transition: 0.5s;
+}
+.product-description__card-heart svg:hover {
+  stroke: none;
+  fill: #1c1c27;
+}
 
 .product-description-details {
   margin-bottom: 19px;
@@ -681,6 +713,15 @@ body {
 }
 .cart-add__card {
   padding: 18px;
+}
+.cart-add__card-delete {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-add__card-delete-btn {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
 .cart-add__card-info {
   display: flex;

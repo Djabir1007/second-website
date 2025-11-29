@@ -18,6 +18,7 @@
   &__card:hover {
     @include card-hover;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -66,6 +67,16 @@
   }
   &__card-heart {
     @include card-heart;
+  }
+  &__card-heart svg {
+    stroke: #1c1c27;
+    fill: transparent;
+    transition: 0.5s;
+  }
+
+  &__card-heart svg:hover {
+    stroke: none;
+    fill: #1c1c27;
   }
   &__card-price_sale {
     @include value-sale;

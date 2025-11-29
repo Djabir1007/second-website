@@ -41,6 +41,15 @@
   &__card {
     padding: 18px;
   }
+  &__card-delete {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__card-delete-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
   &__card-info {
     display: flex;
     align-items: center;

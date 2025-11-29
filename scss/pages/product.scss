@@ -59,6 +59,21 @@
     font-size: 20px;
     color: #df6464;
   }
+  &__card-heart {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  &__card-heart svg {
+    stroke: #1c1c27;
+    fill: transparent;
+    transition: 0.5s;
+  }
+
+  &__card-heart svg:hover {
+    stroke: none;
+    fill: #1c1c27;
+  }
 }
 
 .product-description-details {
@@ -73,6 +88,7 @@
     max-width: 824px;
     width: 100%;
   }
+
   &__title-block {
     background-color: #fff;
     padding-top: 20px;
